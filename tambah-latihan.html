@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Routine | SetUp</title>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a> |
+        <a href="index.html#daftar-routine">Daftar Routine</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Tambah Routine</h1>
+      <p>Susun routine yang dapat digunakan kembali pada sesi latihan berikutnya.</p>
+
+      <form action="tambah-latihan.html" method="get">
+        <fieldset>
+          <legend>Informasi Routine</legend>
+
+          <p>
+            <label for="nama-routine">Nama routine:</label><br>
+            <input
+              type="text"
+              id="nama-routine"
+              name="nama-routine"
+              placeholder="Contoh: Upper Body A"
+              required
+            >
+          </p>
+
+          <p>
+            <label for="hari-latihan">Hari latihan:</label><br>
+            <select id="hari-latihan" name="hari-latihan" required>
+              <option value="">Pilih hari</option>
+              <option value="senin">Senin</option>
+              <option value="selasa">Selasa</option>
+              <option value="rabu">Rabu</option>
+              <option value="kamis">Kamis</option>
+              <option value="jumat">Jumat</option>
+              <option value="sabtu">Sabtu</option>
+              <option value="minggu">Minggu</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Susunan Gerakan</legend>
+
+          <p>
+            <label for="gerakan">Nama gerakan:</label><br>
+            <select id="gerakan" name="gerakan" required>
+              <option value="">Pilih gerakan</option>
+              <option value="bicep-curls">Bicep Curls</option>
+              <option value="shoulder-press">Shoulder Press</option>
+              <option value="tricep-extensions">Tricep Extensions</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="jumlah-set">Target set:</label><br>
+            <input type="number" id="jumlah-set" name="jumlah-set" min="1" required>
+          </p>
+
+          <p>
+            <label for="repetisi">Target repetisi per set:</label><br>
+            <input type="number" id="repetisi" name="repetisi" min="1" required>
+          </p>
+
+          <p>
+            <label for="beban">Target beban (kg):</label><br>
+            <input type="number" id="beban" name="beban" min="0" step="0.5" required>
+          </p>
+
+          <p>
+            <button type="button">Tambah Gerakan</button>
+          </p>
+
+          <p>
+            <label for="catatan">Catatan routine:</label><br>
+            <textarea
+              id="catatan"
+              name="catatan"
+              rows="4"
+              cols="40"
+              placeholder="Tulis petunjuk atau catatan untuk routine ini"
+            ></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Simpan Routine</button>
+          <a href="index.html">Batal</a>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p>SetUp — Catat latihan, pantau perkembangan.</p>
+    </footer>
+  </body>
+</html>
