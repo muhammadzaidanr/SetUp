@@ -1,0 +1,184 @@
+/* Warna dan tulisan dasar */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f7f8;
+  color: #263b47;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  color: #17384b;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+a {
+  color: #087986;
+}
+
+/* Bagian atas dan menu */
+.site-header {
+  background-color: #17384b;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand p {
+  margin: 0 0 5px;
+}
+
+.brand strong {
+  font-size: 28px;
+}
+
+.brand span {
+  color: #ffad66;
+}
+
+.tagline {
+  font-size: 14px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffad66;
+}
+
+/* Isi halaman */
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+section, article, fieldset {
+  background-color: white;
+  border: 1px solid #d7e3e6;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+article {
+  border-left: 4px solid #e77b39;
+}
+
+dt, label, legend {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tabel dan formulir */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption, th, td {
+  text-align: left;
+}
+
+th, td {
+  border-bottom: 1px solid #d7e3e6;
+  padding: 8px;
+}
+
+thead {
+  background-color: #e4f1f2;
+}
+
+input, select, textarea {
+  max-width: 100%;
+  padding: 8px;
+  border: 1px solid #a9bfc5;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+button {
+  background-color: #e77b39;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #17384b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Pada layar kecil, menu menjadi vertikal */
+@media (max-width: 600px) {
+  .site-header {
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  main {
+    width: 94%;
+  }
+
+  section, article, fieldset {
+    padding: 10px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 4px;
+  }
+}
