@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | SetUp</title>
+  </head>
+  <body>
+    <header>
+      <p><strong>SetUp</strong></p>
+      <p>Catat latihanmu, lihat progresmu.</p>
+
+      <nav aria-label="Navigasi utama">
+        <a href="index.html">Beranda</a> |
+        <a href="#daftar-routine">Daftar Routine</a>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="riwayat-latihan">
+        <h1 id="riwayat-latihan">Riwayat Latihan</h1>
+        <p>
+          Lihat kembali gerakan dan hasil dari setiap sesi latihan yang telah
+          diselesaikan.
+        </p>
+
+        <article>
+          <header>
+            <h2>Upper Body A</h2>
+            <p>Senin, <time datetime="2026-09-21">21 September 2026</time></p>
+          </header>
+
+          <h3>Ringkasan Sesi</h3>
+          <dl>
+            <dt>Durasi</dt>
+            <dd>55 menit</dd>
+
+            <dt>Jumlah gerakan</dt>
+            <dd>3 gerakan</dd>
+
+            <dt>Total volume</dt>
+            <dd>1.650 kg</dd>
+          </dl>
+
+          <h3>Gerakan Latihan</h3>
+          <table>
+            <caption>Hasil gerakan pada sesi Upper Body A</caption>
+            <thead>
+              <tr>
+                <th scope="col">Gerakan</th>
+                <th scope="col">Set</th>
+                <th scope="col">Repetisi per Set</th>
+                <th scope="col">Beban</th>
+                <th scope="col">Volume</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Bicep Curls</th>
+                <td>3</td>
+                <td>10</td>
+                <td>20 kg</td>
+                <td>600 kg</td>
+              </tr>
+              <tr>
+                <th scope="row">Shoulder Press</th>
+                <td>3</td>
+                <td>12</td>
+                <td>25 kg</td>
+                <td>900 kg</td>
+              </tr>
+              <tr>
+                <th scope="row">Tricep Extensions</th>
+                <td>3</td>
+                <td>10</td>
+                <td>5 kg</td>
+                <td>150 kg</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><a href="detail-latihan.html">Lihat detail sesi</a></p>
+        </article>
+      </section>
+
+      <section id="daftar-routine" aria-labelledby="judul-daftar-routine">
+        <h2 id="judul-daftar-routine">Daftar Routine</h2>
+        <p>Pilih routine yang telah dibuat untuk digunakan pada sesi latihan berikutnya.</p>
+
+        <form action="tambah-latihan.html" method="get">
+          <button type="submit">Tambah Routine</button>
+        </form>
+
+        <table>
+          <caption>Routine latihan yang tersedia</caption>
+          <thead>
+            <tr>
+              <th scope="col">Nama Routine</th>
+              <th scope="col">Fokus Latihan</th>
+              <th scope="col">Jumlah Gerakan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Upper Body A</th>
+              <td>Biseps, bahu, dan triseps</td>
+              <td>3 gerakan</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>SetUp — Catat latihan, pantau perkembangan.</p>
+    </footer>
+  </body>
+</html>
