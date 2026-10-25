@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda | SetUp</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="brand">
-        <p><strong>Set<span>Up</span></strong></p>
-        <p class="tagline">Catat latihanmu, lihat progresmu.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | SetUp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <a class="brand" href="index.html">Set<span>Up</span></a>
+        </div>
+
+        <nav class="col-12 col-md-8">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="detail-latihan.html">Detail Latihan</a></li>
+            <li><a href="tambah-latihan.html">Tambah Routine</a></li>
+          </ul>
+        </nav>
       </div>
+    </div>
+  </header>
 
-      <nav aria-label="Navigasi utama">
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="#daftar-routine">Daftar Routine</a></li>
-        </ul>
-      </nav>
-    </header>
+  <main class="container">
+    <h1>Riwayat Latihan</h1>
+    <p>Lihat kembali gerakan dan hasil dari setiap sesi latihanmu.</p>
 
-    <main>
-      <section aria-labelledby="riwayat-latihan">
-        <h1 id="riwayat-latihan">Riwayat Latihan</h1>
-        <p>
-          Lihat kembali gerakan dan hasil dari setiap sesi latihan yang telah
-          diselesaikan.
-        </p>
-
-        <article>
+    <div class="row">
+      <div class="col-12 col-md-8">
+        <article class="panel">
           <header>
             <h2>Upper Body A</h2>
-            <p>Senin, <time datetime="2026-09-21">21 September 2026</time></p>
+            <p>Senin, 21 September 2026</p>
           </header>
 
           <h3>Ringkasan Sesi</h3>
@@ -47,77 +50,45 @@
             <dd>1.650 kg</dd>
           </dl>
 
-          <h3>Gerakan Latihan</h3>
-          <table>
-            <caption>Hasil gerakan pada sesi Upper Body A</caption>
-            <thead>
-              <tr>
-                <th scope="col">Gerakan</th>
-                <th scope="col">Set</th>
-                <th scope="col">Repetisi per Set</th>
-                <th scope="col">Beban</th>
-                <th scope="col">Volume</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Bicep Curls</th>
-                <td>3</td>
-                <td>10</td>
-                <td>20 kg</td>
-                <td>600 kg</td>
-              </tr>
-              <tr>
-                <th scope="row">Shoulder Press</th>
-                <td>3</td>
-                <td>12</td>
-                <td>25 kg</td>
-                <td>900 kg</td>
-              </tr>
-              <tr>
-                <th scope="row">Tricep Extensions</th>
-                <td>3</td>
-                <td>10</td>
-                <td>5 kg</td>
-                <td>150 kg</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <p><a href="detail-latihan.html">Lihat detail sesi</a></p>
+          <a href="detail-latihan.html" class="btn btn-warning">Lihat Detail Sesi</a>
         </article>
-      </section>
+      </div>
 
-      <section id="daftar-routine" aria-labelledby="judul-daftar-routine">
-        <h2 id="judul-daftar-routine">Daftar Routine</h2>
-        <p>Pilih routine yang telah dibuat untuk digunakan pada sesi latihan berikutnya.</p>
+      <div class="col-12 col-md-4">
+        <section class="panel">
+          <h2>Routine Latihan</h2>
+          <p>Susun gerakan untuk sesi latihan berikutnya.</p>
+          <a href="tambah-latihan.html" class="btn btn-warning">Tambah Routine</a>
+        </section>
+      </div>
+    </div>
 
-        <form action="tambah-latihan.html" method="get">
-          <button type="submit">Tambah Routine</button>
-        </form>
+    <section class="panel">
+      <h2>Daftar Routine</h2>
+      <p>Routine yang tersedia untuk latihan berikutnya.</p>
 
-        <table>
-          <caption>Routine latihan yang tersedia</caption>
-          <thead>
-            <tr>
-              <th scope="col">Nama Routine</th>
-              <th scope="col">Fokus Latihan</th>
-              <th scope="col">Jumlah Gerakan</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Upper Body A</th>
-              <td>Biseps, bahu, dan triseps</td>
-              <td>3 gerakan</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
+      <table class="table table-bordered table-hover">
+        <caption>Routine latihan yang tersedia</caption>
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Nama Routine</th>
+            <th scope="col">Fokus Latihan</th>
+            <th scope="col">Jumlah Gerakan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Upper Body A</th>
+            <td>Biseps, bahu, dan triseps</td>
+            <td>3 gerakan</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
-    <footer>
-      <p>SetUp — Catat latihan, pantau perkembangan.</p>
-    </footer>
-  </body>
+  <footer class="site-footer text-center">
+    <p>SetUp — Catat latihan, pantau perkembangan.</p>
+  </footer>
+</body>
 </html>

@@ -1,109 +1,106 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Routine | SetUp</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="brand"><p><strong>Set<span>Up</span></strong></p></div>
-      <nav aria-label="Navigasi utama">
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="index.html#daftar-routine">Daftar Routine</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tambah Routine | SetUp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <a class="brand" href="index.html">Set<span>Up</span></a>
+        </div>
 
-    <main>
-      <h1>Tambah Routine</h1>
-      <p>Susun routine yang dapat digunakan kembali pada sesi latihan berikutnya.</p>
+        <nav class="col-12 col-md-8">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="detail-latihan.html">Detail Latihan</a></li>
+            <li><a href="tambah-latihan.html">Tambah Routine</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-      <form action="tambah-latihan.html" method="get">
-        <fieldset>
-          <legend>Informasi Routine</legend>
+  <main class="container">
+    <h1>Tambah Routine</h1>
+    <p>Susun routine untuk sesi latihan berikutnya.</p>
 
-          <p>
-            <label for="nama-routine">Nama routine:</label><br>
-            <input
-              type="text"
-              id="nama-routine"
-              name="nama-routine"
-              placeholder="Contoh: Upper Body A"
-              required
-            >
-          </p>
+    <form action="tambah-latihan.html" method="get" class="panel">
+      <fieldset>
+        <legend>Informasi Routine</legend>
 
-          <p>
-            <label for="hari-latihan">Hari latihan:</label><br>
-            <select id="hari-latihan" name="hari-latihan" required>
-              <option value="">Pilih hari</option>
-              <option value="senin">Senin</option>
-              <option value="selasa">Selasa</option>
-              <option value="rabu">Rabu</option>
-              <option value="kamis">Kamis</option>
-              <option value="jumat">Jumat</option>
-              <option value="sabtu">Sabtu</option>
-              <option value="minggu">Minggu</option>
-            </select>
-          </p>
-        </fieldset>
+        <div class="mb-3">
+          <label for="nama-routine">Nama routine:</label>
+          <input type="text" class="form-control" id="nama-routine" name="nama-routine" placeholder="Contoh: Upper Body A" required>
+        </div>
 
-        <fieldset>
-          <legend>Susunan Gerakan</legend>
+        <div class="mb-3">
+          <label for="hari-latihan">Hari latihan:</label>
+          <select class="form-control" id="hari-latihan" name="hari-latihan" required>
+            <option value="">Pilih hari</option>
+            <option value="senin">Senin</option>
+            <option value="selasa">Selasa</option>
+            <option value="rabu">Rabu</option>
+            <option value="kamis">Kamis</option>
+            <option value="jumat">Jumat</option>
+            <option value="sabtu">Sabtu</option>
+            <option value="minggu">Minggu</option>
+          </select>
+        </div>
+      </fieldset>
 
-          <p>
-            <label for="gerakan">Nama gerakan:</label><br>
-            <select id="gerakan" name="gerakan" required>
-              <option value="">Pilih gerakan</option>
-              <option value="bicep-curls">Bicep Curls</option>
-              <option value="shoulder-press">Shoulder Press</option>
-              <option value="tricep-extensions">Tricep Extensions</option>
-            </select>
-          </p>
+      <fieldset>
+        <legend>Susunan Gerakan</legend>
 
-          <p>
-            <label for="jumlah-set">Target set:</label><br>
-            <input type="number" id="jumlah-set" name="jumlah-set" min="1" required>
-          </p>
+        <div class="mb-3">
+          <label for="gerakan">Nama gerakan:</label>
+          <select class="form-control" id="gerakan" name="gerakan" required>
+            <option value="">Pilih gerakan</option>
+            <option value="bicep-curls">Bicep Curls</option>
+            <option value="shoulder-press">Shoulder Press</option>
+            <option value="tricep-extensions">Tricep Extensions</option>
+          </select>
+        </div>
 
-          <p>
-            <label for="repetisi">Target repetisi per set:</label><br>
-            <input type="number" id="repetisi" name="repetisi" min="1" required>
-          </p>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3">
+            <label for="jumlah-set">Target set:</label>
+            <input type="number" class="form-control" id="jumlah-set" name="jumlah-set" min="1" required>
+          </div>
 
-          <p>
-            <label for="beban">Target beban (kg):</label><br>
-            <input type="number" id="beban" name="beban" min="0" step="0.5" required>
-          </p>
+          <div class="col-12 col-md-4 mb-3">
+            <label for="repetisi">Target repetisi per set:</label>
+            <input type="number" class="form-control" id="repetisi" name="repetisi" min="1" required>
+          </div>
 
-          <p>
-            <button type="button">Tambah Gerakan</button>
-          </p>
-
-          <p>
-            <label for="catatan">Catatan routine:</label><br>
-            <textarea
-              id="catatan"
-              name="catatan"
-              rows="4"
-              cols="40"
-              placeholder="Tulis petunjuk atau catatan untuk routine ini"
-            ></textarea>
-          </p>
-        </fieldset>
+          <div class="col-12 col-md-4 mb-3">
+            <label for="beban">Target beban (kg):</label>
+            <input type="number" class="form-control" id="beban" name="beban" min="0" step="0.5" required>
+          </div>
+        </div>
 
         <p>
-          <button type="submit">Simpan Routine</button>
-          <a href="index.html">Batal</a>
+          <button type="button" class="btn btn-secondary">Tambah Gerakan</button>
         </p>
-      </form>
-    </main>
 
-    <footer>
-      <p>SetUp — Catat latihan, pantau perkembangan.</p>
-    </footer>
-  </body>
+        <div class="mb-3">
+          <label for="catatan">Catatan routine:</label>
+          <textarea class="form-control" id="catatan" name="catatan" rows="4" placeholder="Tulis petunjuk atau catatan untuk routine ini"></textarea>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn-warning">Simpan Routine</button>
+      <a href="index.html" class="btn btn-secondary">Batal</a>
+    </form>
+  </main>
+
+  <footer class="site-footer text-center">
+    <p>SetUp — Catat latihan, pantau perkembangan.</p>
+  </footer>
+</body>
 </html>

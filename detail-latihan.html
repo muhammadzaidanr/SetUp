@@ -1,103 +1,114 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Latihan | SetUp</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="brand"><p><strong>Set<span>Up</span></strong></p></div>
-      <nav aria-label="Navigasi utama">
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="index.html#daftar-routine">Daftar Routine</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Latihan | SetUp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <a class="brand" href="index.html">Set<span>Up</span></a>
+        </div>
 
-    <main>
-      <p><a href="index.html">Kembali ke riwayat latihan</a></p>
+        <nav class="col-12 col-md-8">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="detail-latihan.html">Detail Latihan</a></li>
+            <li><a href="tambah-latihan.html">Tambah Routine</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-      <article>
-        <header>
-          <h1>Upper Body A</h1>
-          <p>Senin, <time datetime="2026-09-21">21 September 2026</time></p>
-        </header>
+  <main class="container">
+    <p><a href="index.html">Kembali ke riwayat latihan</a></p>
 
-        <figure>
-          <img
-            src="assets/images/UpperBody.jpg"
-            alt="Gerakan Upper Body A: Bicep Curls, Shoulder Press, Tricep Extensions"
-            width="320"
-          >
-          <figcaption>Contoh gerakan dalam sesi Upper Body A.</figcaption>
-        </figure>
+    <article class="panel">
+      <header>
+        <h1>Upper Body A</h1>
+        <p>Senin, 21 September 2026</p>
+      </header>
 
-        <section aria-labelledby="ringkasan-sesi">
-          <h2 id="ringkasan-sesi">Ringkasan Sesi</h2>
-          <dl>
-            <dt>Durasi</dt>
-            <dd>55 menit</dd>
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <figure>
+            <img src="assets/images/UpperBody.jpg" class="img-fluid" alt="Gerakan Bicep Curls, Shoulder Press, dan Tricep Extensions" width="320">
+            <figcaption>Gerakan dalam sesi Upper Body A.</figcaption>
+          </figure>
+        </div>
 
-            <dt>Jumlah gerakan</dt>
-            <dd>3 gerakan</dd>
+        <div class="col-12 col-md-7">
+          <section>
+            <h2>Ringkasan Sesi</h2>
+            <dl>
+              <dt>Durasi</dt>
+              <dd>55 menit</dd>
 
-            <dt>Total volume</dt>
-            <dd>1.650 kg</dd>
-          </dl>
-        </section>
+              <dt>Jumlah gerakan</dt>
+              <dd>3 gerakan</dd>
 
-        <section aria-labelledby="hasil-latihan">
-          <h2 id="hasil-latihan">Hasil Latihan</h2>
+              <dt>Total volume</dt>
+              <dd>1.650 kg</dd>
+            </dl>
+          </section>
+        </div>
+      </div>
 
-          <table>
-            <caption>Gerakan dalam sesi Upper Body A</caption>
-            <thead>
-              <tr>
-                <th scope="col">Gerakan</th>
-                <th scope="col">Set</th>
-                <th scope="col">Reps</th>
-                <th scope="col">Beban</th>
-                <th scope="col">Volume</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Bicep Curls</th>
-                <td>3</td>
-                <td>10</td>
-                <td>20 kg</td>
-                <td>600 kg</td>
-              </tr>
-              <tr>
-                <th scope="row">Shoulder Press</th>
-                <td>3</td>
-                <td>12</td>
-                <td>25 kg</td>
-                <td>900 kg</td>
-              </tr>
-              <tr>
-                <th scope="row">Tricep Extensions</th>
-                <td>3</td>
-                <td>10</td>
-                <td>5 kg</td>
-                <td>150 kg</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+      <section>
+        <h2>Hasil Latihan</h2>
 
-        <section aria-labelledby="catatan-latihan">
-          <h2 id="catatan-latihan">Catatan Latihan</h2>
-          <p>Fokus menjaga teknik gerakan dan menyelesaikan semua set.</p>
-        </section>
-      </article>
-    </main>
+        <table class="table table-bordered table-hover table-sm">
+          <caption>Hasil gerakan dalam sesi Upper Body A</caption>
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Gerakan</th>
+              <th scope="col">Set</th>
+              <th scope="col">Reps</th>
+              <th scope="col">Beban</th>
+              <th scope="col">Volume</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Bicep Curls</th>
+              <td>3</td>
+              <td>10</td>
+              <td>20 kg</td>
+              <td>600 kg</td>
+            </tr>
+            <tr>
+              <th scope="row">Shoulder Press</th>
+              <td>3</td>
+              <td>12</td>
+              <td>25 kg</td>
+              <td>900 kg</td>
+            </tr>
+            <tr>
+              <th scope="row">Tricep Extensions</th>
+              <td>3</td>
+              <td>10</td>
+              <td>5 kg</td>
+              <td>150 kg</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-    <footer>
-      <p>SetUp — Catat latihan, pantau perkembangan.</p>
-    </footer>
-  </body>
+      <section>
+        <h2>Catatan Latihan</h2>
+        <p>Fokus menjaga teknik gerakan dan menyelesaikan semua set.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer text-center">
+    <p>SetUp — Catat latihan, pantau perkembangan.</p>
+  </footer>
+</body>
 </html>
