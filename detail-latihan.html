@@ -46,15 +46,16 @@
         <div class="col-12 col-md-7">
           <section>
             <h2>Ringkasan Sesi</h2>
+
             <dl>
               <dt>Durasi</dt>
               <dd>55 menit</dd>
 
               <dt>Jumlah gerakan</dt>
-              <dd>3 gerakan</dd>
+              <dd id="jumlah-gerakan"></dd>
 
               <dt>Total volume</dt>
-              <dd>1.650 kg</dd>
+              <dd id="total-volume"></dd>
             </dl>
           </section>
         </div>
@@ -74,35 +75,32 @@
               <th scope="col">Volume</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Bicep Curls</th>
-              <td>3</td>
-              <td>10</td>
-              <td>20 kg</td>
-              <td>600 kg</td>
-            </tr>
-            <tr>
-              <th scope="row">Shoulder Press</th>
-              <td>3</td>
-              <td>12</td>
-              <td>25 kg</td>
-              <td>900 kg</td>
-            </tr>
-            <tr>
-              <th scope="row">Tricep Extensions</th>
-              <td>3</td>
-              <td>10</td>
-              <td>5 kg</td>
-              <td>150 kg</td>
-            </tr>
-          </tbody>
+          <tbody id="data-latihan"></tbody>
         </table>
+
+        <p>
+          <button type="button" id="hapus-gerakan" class="btn btn-danger">
+            Hapus Gerakan Terakhir
+          </button>
+        </p>
       </section>
 
       <section>
         <h2>Catatan Latihan</h2>
-        <p>Fokus menjaga teknik gerakan dan menyelesaikan semua set.</p>
+
+        <p>
+          <button type="button" id="sembunyikan-catatan" class="btn btn-secondary">
+            Sembunyikan Catatan
+          </button>
+
+          <button type="button" id="tampilkan-catatan" class="btn btn-warning">
+            Tampilkan Catatan
+          </button>
+        </p>
+
+        <p id="catatan-latihan">
+          Fokus menjaga teknik gerakan dan menyelesaikan semua set.
+        </p>
       </section>
     </article>
   </main>
@@ -110,5 +108,8 @@
   <footer class="site-footer text-center">
     <p>SetUp — Catat latihan, pantau perkembangan.</p>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
